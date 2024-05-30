@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVENTURISMO</title>
+    <link rel="icon" href="../img/rafting.ico">
+    
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/d75b83cd1f.js" crossorigin="anonymous"></script>
+    <script src="../JS/index.js"></script>
+
+</head>
+<body>
+    
+    <nav class="navbar" id="inicio">
+        <h1 class="logo">AVENTURISMO</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#proximos_eventos">Próximos eventos</a></li>
+            <li><a href="#deportes_extremos">Deportes extremos</a></li>
+            <li><a href="#proximos_destinos">Próximos destinos</a></li>
+            <li class="ctn"><a  href="#">Contacto</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="../img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+       <div class="contenedor_login">
+            <div class="item_login">
+                <a href="../HTML/login.html">Ingresá</a>
+            </div>
+            <div class="item_login">
+                <a href="../HTML/registro.html">Registrate</a>
+        </div>
+    </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Conectando corazones con destinos inolvidables</h2>
+            <div class="line"></div>
+            <h1>DEPORTES EXTREMOS</h1>
+            <a href="" class="ctn">Informacion</a>
+        </div>
+    </header>
+
+   
+    <section class="events" id="proximos_eventos">
+        <div>
+            <a href="#inicio" class="ctn" id="volver">Volver</a>
+        </div>
+        <div class="title">
+           <h1>Proximos Eventos</h1>
+           <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="../img/img1.png" alt="caminata-sobre-la-nieve">
+                <h4>Caminata sobre la nieve</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui, iure possimus libero expedita incidunt!</p>
+                <a href="#" class="ctn">Informacion</a>
+            </div>
+            <div class="col">
+                <img src="../img/img2.png" alt="mountain-trekking">
+                <h4>Caminata por la montaña</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui, iure possimus libero expedita incidunt!</p>
+                <a href="" class="ctn">Informacion</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore" id="deportes_extremos">
+        <div class="explore-content">
+            <h1>DEPORTES EXTREMOS</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, repellendus sapiente ipsa reprehenderit suscipit iusto odit corrupti, quam velit eligendi laboriosam aspernatur tempore quaerat voluptate.</p>
+            <a href="" class="ctn">Informacion</a>
+        </div>
+        <div class="explore_volver">
+            <a href="#inicio" class="ctn" id="volver">Volver</a>
+        </div>
+    </section>
+
+    <section class="tours" id="proximos_destinos">
+        <div>
+            <a href="#inicio" class="ctn" id="volver">Volver</a>
+        </div>
+        <div class="row">
+            <div class="col content-col">
+                <h1>PROXIMOS DESTINOS</h1>
+                <div class="line"></div>
+                <p>Lo que distingue a los deportes extremos es la sensación de adrenalina y emoción intensa que experimenta el participante.</p>
+                <a href="" class="ctn">Informacion</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="../img/img3.png" alt="trekking">
+                    <img src="../img/img4.png" alt="snowboard">
+                    <img src="../img/img5.png" alt="sandboard">
+                    <img src="../img/img6.png" alt="rafting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer_up">
+            <p>Av. Callao 123, CABA, Argentina | Telefono: 800-123-456 | Email: info@aventurismo.com</p>
+            <div class="redes_sociales">
+                <p>Encontranos en: </p>
+                <a href="https://www.facebook.com/?locale=es_LA">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <p>Copyright © 2024 Aventurismo</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
