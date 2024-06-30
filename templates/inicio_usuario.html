@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio Usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio_usuario_style.css') }}">
+</head>
+<body>
+    <div class="cotizacion_head">
+        <div>
+            <p>Aventurismo</p>
+            <h3>Cotizá tu viaje</h3>
+            <a href="{{ url_for('index') }}">Inicio</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" id="agregar">Agregar</a></li>
+            <li><a href="#" id="modificar">Modificar</a></li>
+            <li><a href="#" id="eliminar">Eliminar</a></li>
+            <li><a href="#" id="consultar">Consultar</a></li>
+        </ul>
+    </nav>
+
+    <section id="contenido">
+        <!-- Aquí se mostrarán los formularios y resultados de las consultas -->
+    </section>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
