@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.cotizacion_head {
+    color: #f5f5fc;
+    background-color: #49497e;
+    display: flex;
+}
+
+.cotizacion_head div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cotizacion_head div a {
+    margin: 10px;
+    align-content: center;
+    color:antiquewhite;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #fc036b;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.solicitud {
+    background-image: url(../img/rafting.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#contenido {
+    padding: 20px;
+    color:antiquewhite;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(82, 148, 148, 0.589);
+}
+
+
+#formAgregar input {
+    margin-bottom: 10px;
+}
+
+#formModificar input {
+    margin-bottom: 10px;
+}
+
+#formEliminar input {
+    margin-bottom: 10px;
+}
+
+input[type="submit"], .boton-consultar {
+    background-color: #116e998f;
+    color: #f3f3f3;
+    border: 2px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
